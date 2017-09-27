@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>jquery_todo</title>
+  <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css">
+  <link rel="stylesheet" href="./node_modules/jquery-datetimepicker/jquery.datetimepicker.css">
+  <link rel="stylesheet" href="./css/base.css">
+</head>
+
+<body>
+  <audio class="alert" src="./alert.mp3"></audio>
+  <div class="container">
+    <h1>待办事项</h1>
+    <form class="add-task">
+      <input type="text" name="content" value="" placeholder="添加一条待办事项...E.g:下午2点去超市" autofocus autocomplete="off">
+      <button type="submit">添&nbsp;&nbsp;加</button>
+    </form>
+    <div class="task-list">
+    </div>
+    <div class="task-info">
+      <span class="task-left">剩余任务：<span>0</span></span>
+      <span class="task-switch">
+        <span class="j-tab all" data-tab="all"><span>所&nbsp;&nbsp;有</span></span><span class="j-tab active" data-tab="active"><span>未完成</span></span>
+      <span class="j-tab completed" data-tab="completed"><span>已完成</span></span>
+      </span>
+      <span class="task-clear-completed">清除已完成</span>
+    </div>
+    <div class="task-detail-mask"></div>
+    <div class="task-detail">
+    </div>
+  </div>
+  <script src="./node_modules/jquery/dist/jquery.js"></script>
+  <script src="./node_modules/jquery-datetimepicker/build/jquery.datetimepicker.full.js"></script>
+  <script src="./node_modules/store/store.js"></script>
+  <script src="./js/base.js"></script>
+</body>
+
+</html>
